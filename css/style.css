@@ -62,7 +62,7 @@ li a:hover, #burger-menu:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 380px){
     #burger-menu {
         display: block;
     }
@@ -74,6 +74,7 @@ li a:hover, #burger-menu:hover {
     #close {
         width: 60px;
         height: 60px;
+        border-radius: 30px;
     }
 }
 
