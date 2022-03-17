@@ -62,28 +62,6 @@ li a:hover, #burger-menu:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
-    #burger-menu {
-        display: block;
-    }
-
-    #desktop-menu {
-        display: none;
-    }
-
-    #close {
-        height: 80px;
-        width: 80px;
-    }
-    
-    #close button {
-        border-radius: 40px;
-        font-size: 40px;
-        height: inherit;
-        width: inherit;
-    }
-}
-
 #mobile, #rezept {
     height: 100%;
     width: 100%;
@@ -98,7 +76,19 @@ li a:hover, #burger-menu:hover {
 
 #mobile-content {
     padding: 5px 40px;
-    font-size: 40px;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+#mobile-menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#mobile-menu ul li a {
+    font-size: 50px;
 }
 
 #rezept-container {
@@ -179,13 +169,6 @@ li a:hover, #burger-menu:hover {
 
 #close button:hover {
     background-color: rgb(220, 255, 149);
-}
-
-#mobile-menu ul {
-    list-style-type: none;
-    text-align: center;
-    margin-top: 30px;
-    padding: 0;
 }
 
 .content {
@@ -293,10 +276,39 @@ input:focus, textarea:focus {
     padding: 5px 0px;
     text-align: center;
     font-weight: bold;
+    font-size: 22px;
+}
+
+.description p {
+    margin: 0;
+    margin-top: 10px;
 }
 
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+@media screen and (max-width: 600px){
+    #burger-menu {
+        display: block;
+        font-size: 50px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #close {
+        height: 80px;
+        width: 80px;
+    }
+    
+    #close button {
+        border-radius: 40px;
+        font-size: 70px;
+        height: inherit;
+        width: inherit;
+    }
 }
