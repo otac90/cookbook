@@ -105,8 +105,8 @@ li a:hover, #burger-menu:hover {
 }
 
 .image {
-    max-width: 500px;
-    height: 500px;
+    max-width: 740px;
+    height: 740px;
     margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ li a:hover, #burger-menu:hover {
     max-width: 700px;
     width: 100%;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: bold;
     transition: all 0.5s ease;
 }
@@ -227,6 +227,7 @@ input:focus, textarea:focus {
 
 #contact-btn {
     background-color:rgb(154, 205, 50);
+    color: rgb(50, 50, 50);
     width: 200px;
     padding: 12px;
     border-radius: 50px;
@@ -293,7 +294,7 @@ img {
 @media screen and (max-width: 600px){
     #burger-menu {
         display: block;
-        font-size: 50px;
+        font-size: 70px;
     }
 
     #desktop-menu {
@@ -310,5 +311,34 @@ img {
         font-size: 70px;
         height: inherit;
         width: inherit;
+    }
+
+    #rezept-name {
+        font-size: 50px;
+    }
+
+    .image {
+        max-width: 700px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    
+    #rezept-bild {
+        height: inherit;
+        max-width: inherit;
+        border-radius: 30px;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .content p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    #kontakt {
+        margin-bottom: 50px;
     }
 }
