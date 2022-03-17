@@ -363,7 +363,7 @@ img {
     
     #close button {
         border-radius: 60px;
-        font-size: 100px;
+        font-size: 80px;
         height: inherit;
         width: inherit;
     }
@@ -381,7 +381,6 @@ img {
     }
 
     #main-heading {
-        text-transform: uppercase;
         letter-spacing: 20px;
         line-height: 100px;
         font-size: 100px;
@@ -408,12 +407,13 @@ img {
     }
 
     .content p {
-        font-size: 50px;
-        margin: 30px 0;
+        font-size: 40px;
+        margin: 20px 0;
     }
 
     #kontakt {
         margin-bottom: 100px;
+        font-size: 60px;
     }
 
     input {
@@ -485,7 +485,7 @@ img {
     
     #close button {
         border-radius: 60px;
-        font-size: 100px;
+        font-size: 80px;
         height: inherit;
         width: inherit;
     }
@@ -503,7 +503,6 @@ img {
     }
 
     #main-heading {
-        text-transform: uppercase;
         letter-spacing: 20px;
         line-height: 100px;
         font-size: 100px;
@@ -530,12 +529,13 @@ img {
     }
 
     .content p {
-        font-size: 50px;
-        margin: 30px 0;
+        font-size: 40px;
+        margin: 20px 0;
     }
 
     #kontakt {
         margin-bottom: 100px;
+        font-size: 60px;
     }
 
     input {
