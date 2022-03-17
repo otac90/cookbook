@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>The Simple Cookbook</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <ul class="nav">
+        <div id="desktop-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="rezepte.html" style="color:yellowgreen;">Rezepte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </div>
+        <li id="burger-menu" onclick="showMenu()">&#x2630;</li>
+    </ul>
+
+    <div id="mobile">
+        <div id="mobile-content">
+            <div id="close">
+                <button id="close-btn" onclick="closeMenu()">&times;</button>
+            </div>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="rezepte.html" style="color:yellowgreen;">Rezepte</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="rezept">
+        <div id="rezept-container">
+            <div id="close">
+                <button id="close-btn" onclick="closeRezept()">&times;</button>
+            </div>
+            <div id="rezept-content">
+                <div class="image">
+                    <img id="rezept-bild" src="../media/lasagne.jpg">
+                </div>
+                <h2 id="rezept-name">Lasagne</h2>
+                <div class="rezept-spalten">
+                    <div class="zutaten">
+                        <h3>Zutaten</h3>
+                        <ul>
+                            <li>1kg Mehl</li>
+                            <li>1 TL Salz</li>
+                            <li>6 Eier</li>
+                            <li>2l Wasser</li>
+                            <li>1 Pkg. Backpulver</li>
+                        </ul>
+                    </div>
+                    <div class="zubereitung">
+                        <h3>Zubereitung</h3>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</li>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet, consetetur</li>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rezepte">
+        <div id="r1" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i1" src="../media/lasagne.jpg" alt="lasagne">
+                </div>
+                <div class="description">
+                    <p id="d1">Lasagne</p>
+                </div>
+            </div>
+        </div>
+        <div id="r2" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i2" src="../media/pizza.jpg" alt="pizza">
+                </div>
+                <div class="description">
+                    <p id="d2">Pizza</p>
+                </div>
+            </div>
+        </div>
+        <div id="r3" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i3" src="../media/cheeseburger.jpg" alt="cheeseburger">
+                </div>
+                <div class="description">
+                    <p id="d3">Cheeseburger</p>
+                </div>
+            </div>
+        </div>
+        <div id="r4" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i4" src="../media/gulasch.jpg" alt="gulasch">
+                </div>
+                <div class="description">
+                    <p id="d4">Gulasch</p>
+                </div>
+            </div>
+        </div>
+        <div id="r5" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i5" src="../media/schnitzel.jpg" alt="schnitzel">
+                </div>
+                <div class="description">
+                    <p id="d5">Schnitzel</p>
+                </div>
+            </div>
+        </div>
+        <div id="r6" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i6" src="../media/bolognese.jpg" alt="bolognese">
+                </div>
+                <div class="description">
+                    <p id="d6">Bolognese</p>
+                </div>
+            </div>
+        </div>
+        <div id="r7" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i7" src="../media/chiliconcarne.jpg" alt="chiliconcarne">
+                </div>
+                <div class="description">
+                    <p id="d7">Chili Con Carne</p>
+                </div>
+            </div>
+        </div>
+        <div id="r8" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i8" src="../media/linsensuppe.jpg" alt="linsensuppe">
+                </div>
+                <div class="description">
+                    <p id="d8">Linsensuppe</p>
+                </div>
+            </div>
+        </div>
+        <div id="r9" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i9" src="../media/vollkornbrot.jpg" alt="vollkornbrot">
+                </div>
+                <div class="description">
+                    <p id="d9">Vollkornbrot</p>
+                </div>
+            </div>
+        </div>
+        <div id="r10" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i10" src="../media/käsespätzle.jpg" alt="käsespätzle">
+                </div>
+                <div class="description">
+                    <p id="d10">Käsespätzle</p>
+                </div>
+            </div>
+        </div>
+        <div id="r11" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i11" src="../media/rührei.jpg" alt="rührei">
+                </div>
+                <div class="description">
+                    <p id="d11">Rührei</p>
+                </div>
+            </div>
+        </div>
+        <div id="r12" class="card" onclick="showRezept()">
+            <div>
+                <div class="thumbnail">
+                    <img id="i12" src="../media/hotdog.jpg" alt="hot dog">
+                </div>
+                <div class="description">
+                    <p id="d12">Hot Dog</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

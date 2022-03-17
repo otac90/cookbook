@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>The Simple Cookbook</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <ul class="nav">
+        <div id="desktop-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="rezepte.html">Rezepte</a></li>
+            <li><a href="kontakt.html" style="color:yellowgreen;">Kontakt</a></li>
+        </div>
+        <li id="burger-menu" onclick="showMenu()">&#x2630;</li>
+    </ul>
+
+    <div id="mobile">
+        <div id="mobile-content">
+            <div id="close">
+                <button id="close-btn" onclick="closeMenu()">&times;</button>
+            </div>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="rezepte.html">Rezepte</a></li>
+                    <li><a href="kontakt.html" style="color:yellowgreen;">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <p style="margin-top:0;margin-bottom:30px;font-size:20px;">Kontaktieren Sie uns jetzt, wenn Sie weitere Rezepte wünschen.</p>
+        </div>
+        <div>
+            <div>
+                <p>Name</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Email</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Betreff</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Nachricht</p>
+                <textarea id="nachricht" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <button id="contact-btn">Senden</button>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

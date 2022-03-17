@@ -1,0 +1,288 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: rgb(50, 50, 50);
+    padding: 0px 20px;
+    color: white;
+    z-index: 0;
+}
+
+#main-heading {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 60px;
+    font-size: 60px;
+    color: rgb(154, 205, 50);
+    text-align: left;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(65, 65, 65);
+    border-radius: 12px 12px 12px 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(154, 205, 50);
+    border-radius: 12px 12px 12px 12px;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li a:hover, #burger-menu:hover {
+    color: rgb(154, 205, 50);
+}
+
+#burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+    #burger-menu {
+        display: block;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #close {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#mobile, #rezept {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+}
+
+#mobile-content {
+    padding: 5px 40px;
+    font-size: 40px;
+}
+
+#rezept-container {
+    margin-top: 20px;
+    padding: 5px 40px;
+}
+
+#rezept-content {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color:rgb(65, 65, 65);
+    border-radius: 30px;
+    padding: 60px;
+}
+
+.image {
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#rezept-bild {
+    height: inherit;
+    max-width: inherit;
+    border-radius: 30px;
+}
+
+#rezept-name {
+    margin: 50px 0;
+}
+
+.rezept-spalten {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.zutaten, .zubereitung {
+    background-color: rgb(220, 255, 149);
+    color:rgb(65, 65, 65);
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.zutaten li:nth-child(even), .zubereitung li:nth-child(even) {
+    color:rgb(93, 75, 128);
+}
+
+.zutaten:hover, .zubereitung:hover {
+    background-color:rgb(154, 205, 50);
+    transition: all 0.5 ease;
+}
+
+#close {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+}
+
+#close button {
+    background-color: rgb(154, 205, 50);
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#close button:hover {
+    background-color: rgb(220, 255, 149);
+}
+
+#mobile-menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.content {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: rgb(65, 65, 65);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+input, textarea {
+    background-color:rgb(220, 255, 149);
+    border: none;
+    width: 100%;
+    border-radius: 16px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 16px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: rgb(39, 53, 35);
+    border-radius: 0px 12px 12px 0px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 255, 149);
+    border-radius: 0px 12px 12px 0px;
+}
+
+input:focus, textarea:focus {
+    background-color:rgb(154, 205, 50);
+}
+
+.button {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-btn {
+    background-color:rgb(154, 205, 50);
+    width: 200px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#contact-btn:hover {
+    background-color:rgb(220, 255, 149);
+}
+
+.rezepte {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: rgb(65, 65, 65);
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.thumbnail {
+    height: 230px;
+    overflow: hidden;
+}
+
+.description {
+    color: rgb(154, 205, 50);
+    padding: 5px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

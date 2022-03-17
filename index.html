@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>The Simple Cookbook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul class="nav">
+        <div id="desktop-menu">
+            <li><a href="index.html" style="color:yellowgreen;">Home</a></li>
+            <li><a href="html/rezepte.html">Rezepte</a></li>
+            <li><a href="html/kontakt.html">Kontakt</a></li>
+        </div>
+        <li id="burger-menu" onclick="showMenu()">&#x2630;</li>
+    </ul>
+
+    <div id="mobile">
+        <div id="mobile-content">
+            <div id="close">
+                <button id="close-btn" onclick="closeMenu()">&times;</button>
+            </div>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="index.html" style="color:yellowgreen;">Home</a></li>
+                    <li><a href="html/rezepte.html">Rezepte</a></li>
+                    <li><a href="html/kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="main-heading">The<br>Simple<br>Cookbook</h1>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
