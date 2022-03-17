@@ -342,3 +342,247 @@ img {
         margin-bottom: 50px;
     }
 }
+
+@media only screen and (device-width: 390px){
+    #burger-menu {
+        display: block;
+        font-size: 100px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #close {
+        height: 120px;
+        width: 120px;
+        position: fixed;
+        bottom: 60px;
+        left: 45%;
+    }
+    
+    #close button {
+        border-radius: 60px;
+        font-size: 100px;
+        height: inherit;
+        width: inherit;
+    }
+
+    #mobile-menu {
+        margin-top: 400px;
+    }
+
+    #mobile-menu ul li {
+        padding: 50px 0;
+    }
+
+    #mobile-menu ul li a {
+        font-size: 70px;
+    }
+
+    #main-heading {
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        line-height: 100px;
+        font-size: 100px;
+    }
+
+    #rezept-name {
+        font-size: 50px;
+    }
+
+    .image {
+        max-width: 740px;
+        height: 740px;
+        margin: 0 auto;
+    }
+    
+    #rezept-bild {
+        height: inherit;
+        max-width: inherit;
+        border-radius: 30px;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .content p {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    #kontakt {
+        margin-bottom: 100px;
+    }
+
+    input {
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    textarea {
+        height: 500px;
+        border-radius: 40px;
+    }
+
+    .card {
+        min-width: 800px;
+        max-width: 800px;
+        height: 800px;
+        margin: 30px auto;
+    }
+
+    .thumbnail {
+        height: 630px;
+    }
+    
+    .description {
+        padding: 5px 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 70px;
+    }
+    
+    .description p {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact-btn {
+        width: 400px;
+        height: 100px;
+        padding: 12px;
+        border-radius: 50px;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (device-width: 428px){
+    #burger-menu {
+        display: block;
+        font-size: 100px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #close {
+        height: 120px;
+        width: 120px;
+        position: fixed;
+        bottom: 60px;
+        left: 45%;
+    }
+    
+    #close button {
+        border-radius: 60px;
+        font-size: 100px;
+        height: inherit;
+        width: inherit;
+    }
+
+    #mobile-menu {
+        margin-top: 400px;
+    }
+
+    #mobile-menu ul li {
+        padding: 50px 0;
+    }
+
+    #mobile-menu ul li a {
+        font-size: 70px;
+    }
+
+    #main-heading {
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        line-height: 100px;
+        font-size: 100px;
+    }
+
+    #rezept-name {
+        font-size: 50px;
+    }
+
+    .image {
+        max-width: 740px;
+        height: 740px;
+        margin: 0 auto;
+    }
+    
+    #rezept-bild {
+        height: inherit;
+        max-width: inherit;
+        border-radius: 30px;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .content p {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    #kontakt {
+        margin-bottom: 100px;
+    }
+
+    input {
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    textarea {
+        height: 500px;
+        border-radius: 40px;
+    }
+
+    .card {
+        min-width: 800px;
+        max-width: 800px;
+        height: 800px;
+        margin: 30px auto;
+    }
+
+    .thumbnail {
+        height: 630px;
+    }
+    
+    .description {
+        padding: 5px 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 70px;
+    }
+    
+    .description p {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact-btn {
+        width: 400px;
+        height: 100px;
+        padding: 12px;
+        border-radius: 50px;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+}
