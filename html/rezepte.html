@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <!-- Navigationsmenü -->
     <ul class="nav">
         <div id="desktop-menu">
             <li><a href="../index.html">Home</a></li>
@@ -15,6 +16,7 @@
         <li id="burger-menu" onclick="showMenu()">&#x2630;</li>
     </ul>
 
+    <!-- Mobile Menü -->
     <div id="mobile">
         <div id="mobile-content">
             <div id="close">
@@ -30,6 +32,7 @@
         </div>
     </div>
 
+    <!-- Inhalt des Rezepts, sobald die Card angeklickt wurde -->
     <div id="rezept">
         <div id="rezept-container">
             <div id="close">
@@ -66,129 +69,112 @@
         </div>
     </div>
 
+    <!-- Erstellen aller Rezept Cards mit eigener ID und Aufruf einer Funktion beim klicken -->
     <div class="rezepte">
-        <div id="r1" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i1" src="../media/lasagne.jpg" alt="lasagne">
-                </div>
-                <div class="description">
-                    <p id="d1">Lasagne</p>
-                </div>
+        <div id="r1" class="card">
+            <div class="thumbnail">
+                <img id="i1" src="../media/lasagne.jpg" alt="lasagne">
+            </div>
+            <div class="description">
+                <p id="d1">Lasagne</p>
             </div>
         </div>
-        <div id="r2" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i2" src="../media/pizza.jpg" alt="pizza">
-                </div>
-                <div class="description">
-                    <p id="d2">Pizza</p>
-                </div>
+        <div id="r2" class="card">
+            <div class="thumbnail">
+                <img id="i2" src="../media/pizza.jpg" alt="pizza">
+            </div>
+            <div class="description">
+                <p id="d2">Pizza</p>
             </div>
         </div>
-        <div id="r3" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i3" src="../media/cheeseburger.jpg" alt="cheeseburger">
-                </div>
-                <div class="description">
-                    <p id="d3">Cheeseburger</p>
-                </div>
+        <div id="r3" class="card">
+            <div class="thumbnail">
+                <img id="i3" src="../media/cheeseburger.jpg" alt="cheeseburger">
+            </div>
+            <div class="description">
+                <p id="d3">Cheeseburger</p>
             </div>
         </div>
-        <div id="r4" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i4" src="../media/gulasch.jpg" alt="gulasch">
-                </div>
-                <div class="description">
-                    <p id="d4">Gulasch</p>
-                </div>
+        <div id="r4" class="card">
+            <div class="thumbnail">
+                <img id="i4" src="../media/gulasch.jpg" alt="gulasch">
+            </div>
+            <div class="description">
+                <p id="d4">Gulasch</p>
             </div>
         </div>
-        <div id="r5" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i5" src="../media/schnitzel.jpg" alt="schnitzel">
-                </div>
-                <div class="description">
-                    <p id="d5">Schnitzel</p>
-                </div>
+        <div id="r5" class="card">
+            <div class="thumbnail">
+                <img id="i5" src="../media/schnitzel.jpg" alt="schnitzel">
+            </div>
+            <div class="description">
+                <p id="d5">Schnitzel</p>
             </div>
         </div>
-        <div id="r6" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i6" src="../media/bolognese.jpg" alt="bolognese">
-                </div>
-                <div class="description">
-                    <p id="d6">Bolognese</p>
-                </div>
+        <div id="r6" class="card">
+            <div class="thumbnail">
+                <img id="i6" src="../media/bolognese.jpg" alt="bolognese">
+            </div>
+            <div class="description">
+                <p id="d6">Bolognese</p>
             </div>
         </div>
-        <div id="r7" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i7" src="../media/chiliconcarne.jpg" alt="chiliconcarne">
-                </div>
-                <div class="description">
-                    <p id="d7">Chili Con Carne</p>
-                </div>
+        <div id="r7" class="card">
+            <div class="thumbnail">
+                <img id="i7" src="../media/chiliconcarne.jpg" alt="chiliconcarne">
+            </div>
+            <div class="description">
+                <p id="d7">Chili Con Carne</p>
             </div>
         </div>
-        <div id="r8" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i8" src="../media/linsensuppe.jpg" alt="linsensuppe">
-                </div>
-                <div class="description">
-                    <p id="d8">Linsensuppe</p>
-                </div>
+        <div id="r8" class="card">
+            <div class="thumbnail">
+                <img id="i8" src="../media/linsensuppe.jpg" alt="linsensuppe">
+            </div>
+            <div class="description">
+                <p id="d8">Linsensuppe</p>
             </div>
         </div>
-        <div id="r9" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i9" src="../media/vollkornbrot.jpg" alt="vollkornbrot">
-                </div>
-                <div class="description">
-                    <p id="d9">Vollkornbrot</p>
-                </div>
+        <div id="r9" class="card">
+            <div class="thumbnail">
+                <img id="i9" src="../media/vollkornbrot.jpg" alt="vollkornbrot">
+            </div>
+            <div class="description">
+                <p id="d9">Vollkornbrot</p>
             </div>
         </div>
-        <div id="r10" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i10" src="../media/käsespätzle.jpg" alt="käsespätzle">
-                </div>
-                <div class="description">
-                    <p id="d10">Käsespätzle</p>
-                </div>
+        <div id="r10" class="card">
+            <div class="thumbnail">
+                <img id="i10" src="../media/käsespätzle.jpg" alt="käsespätzle">
+            </div>
+            <div class="description">
+                <p id="d10">Käsespätzle</p>
             </div>
         </div>
-        <div id="r11" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i11" src="../media/rührei.jpg" alt="rührei">
-                </div>
-                <div class="description">
-                    <p id="d11">Rührei</p>
-                </div>
+        <div id="r11" class="card">
+            <div class="thumbnail">
+                <img id="i11" src="../media/rührei.jpg" alt="rührei">
+            </div>
+            <div class="description">
+                <p id="d11">Rührei</p>
             </div>
         </div>
-        <div id="r12" class="card" onclick="showRezept()">
-            <div>
-                <div class="thumbnail">
-                    <img id="i12" src="../media/hotdog.jpg" alt="hot dog">
-                </div>
-                <div class="description">
-                    <p id="d12">Hot Dog</p>
-                </div>
+        <div id="r12" class="card">
+            <div class="thumbnail">
+                <img id="i12" src="../media/hotdog.jpg" alt="hot dog">
+            </div>
+            <div class="description">
+                <p id="d12">Hot Dog</p>
             </div>
         </div>
     </div>
 
+    <!-- Button, der ganz nach oben scrollt -->
+    <div id="scroll-to-top">
+        <button id="buttonTop" onclick="scrollToTop()">&#9650;</button>
+    </div>
+
+    <!-- Einbinden des JS File -->
     <script src="../js/main.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ body {
     z-index: 0;
 }
 
+/* Überschrift Startseite */
 #main-heading {
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -19,6 +20,7 @@ h2, h3 {
     text-align: center;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 16px;
@@ -33,7 +35,8 @@ h2, h3 {
     background-color: rgb(154, 205, 50);
     border-radius: 12px 12px 12px 12px;
 }
-
+/* ----------------------------------------------- */
+/* Navigationsmenü */
 .nav {
     list-style-type: none;
     text-align: end;
@@ -56,7 +59,8 @@ li a {
 li a:hover, #burger-menu:hover {
     color: rgb(154, 205, 50);
 }
-
+/* ----------------------------------------------- */
+/* Mobile Menü */
 #burger-menu {
     display: none;
     cursor: pointer;
@@ -90,7 +94,8 @@ li a:hover, #burger-menu:hover {
 #mobile-menu ul li a {
     font-size: 50px;
 }
-
+/* ----------------------------------------------- */
+/* Rezepte */
 #rezept-container {
     margin-top: 20px;
     padding: 5px 40px;
@@ -105,8 +110,8 @@ li a:hover, #burger-menu:hover {
 }
 
 .image {
-    max-width: 740px;
-    height: 740px;
+    max-width: 540px;
+    height: 540px;
     margin: 0 auto;
 }
 
@@ -148,6 +153,74 @@ li a:hover, #burger-menu:hover {
     transition: all 0.5 ease;
 }
 
+.rezepte {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: rgb(65, 65, 65);
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    /* Hover Off Transition von der Karte */
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    outline: 4px solid rgb(154, 205, 50);
+    /* Hover Transition von der Karte */
+    transition: all .2s ease-in-out;
+}
+
+.thumbnail {
+    height: 230px;
+    overflow: hidden;
+}
+
+.card .thumbnail img {
+    /* Hover Off Transition vom Bild */
+    transition: all .4s ease-in-out;
+}
+
+.card:hover .thumbnail img {
+    /* Hover Transition vom Bild */
+    transition: all .4s ease-in-out;
+}
+
+.card:hover > .thumbnail > img{
+    /* Skaliert das Bild beim hovern über die Karte auf die 1.2-fache Größe */
+    transform: scale(1.2);
+}
+
+.description {
+    color: rgb(154, 205, 50);
+    padding: 5px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.description p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* ----------------------------------------------- */
+/* Button zum schließen des Mobile Menüs und Rezepts */
 #close {
     height: 50px;
     width: 50px;
@@ -170,13 +243,19 @@ li a:hover, #burger-menu:hover {
 #close button:hover {
     background-color: rgb(220, 255, 149);
 }
-
+/* ----------------------------------------------- */
+/* Kontaktformular */
 .content {
     max-width: 500px;
     margin: 30px auto;
     background-color: rgb(65, 65, 65);
     padding: 50px;
     border-radius: 30px;
+}
+
+#kontakt {
+    margin-bottom: 50px;
+    font-size: 24px;
 }
 
 input, textarea {
@@ -200,6 +279,11 @@ textarea {
     resize: none;
 }
 
+input:focus, textarea:focus {
+    background-color:rgb(154, 205, 50);
+}
+/* ----------------------------------------------- */
+/* Scrollbar innerhalb der Textarea */
 textarea::-webkit-scrollbar {
     width: 15px;
     border-radius: 16px;
@@ -214,11 +298,8 @@ textarea::-webkit-scrollbar-thumb {
     background-color: rgb(220, 255, 149);
     border-radius: 0px 12px 12px 0px;
 }
-
-input:focus, textarea:focus {
-    background-color:rgb(154, 205, 50);
-}
-
+/* ----------------------------------------------- */
+/* Button im Kontaktformular */
 .button {
     width: 200px;
     margin-left: auto;
@@ -242,55 +323,82 @@ input:focus, textarea:focus {
 #contact-btn:hover {
     background-color:rgb(220, 255, 149);
 }
+/* ----------------------------------------------- */
+/* Ladebalken auf der Startseite */
+#spur {
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
+}
 
-.rezepte {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1300px;
+#balken {
+    width: 5%;
+    background-color:rgb(154, 205, 50);
+    border-radius: 10px;
+    animation-name: loading;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#balken-text {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.percent {
+    font-weight: bold;
+    color:rgb(50, 50, 50);
+    padding: 0 12px;
+}
+
+.percent::before {
+    content: "0%";
+    animation-name: loadingText 8s infinite;
+}
+/* Animation des Ladebalkens auf der Startseite */
+@keyframes loading {
+    0% {width: 5%; opacity: 0.6;}
+    25% {width: 25%; opacity: 0.7;}
+    50% {width: 50%; opacity: 0.8;}
+    75% {width: 75%; opacity: 0.9;}
+    100% {width: 100%; opacity: 1;}
+}
+
+@keyframes loadingText {
+    0% {content: "0%";}
+    25% {content: "25%";}
+    50% {content: "50%";}
+    75% {content: "75%";}
+    100% {content: "100%";}
+}
+/* ----------------------------------------------- */
+/* Button, der ganz nach oben scrollt */
+#scroll-to-top {
+    width: 50px;
     margin: 30px auto;
 }
 
-.card {
-    min-width: 300px;
-    max-width: 300px;
-    height: 300px;
-    margin: 10px auto;
-    background-color: rgb(65, 65, 65);
-    border-radius: 30px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: width 2s ease;
-}
-
-.card:hover {
-    width: 320px;
-}
-
-.thumbnail {
-    height: 230px;
-    overflow: hidden;
-}
-
-.description {
-    color: rgb(154, 205, 50);
-    padding: 5px 0px;
+#buttonTop {
+    width: 50px;
+    height: 50px;
     text-align: center;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
+    background-color:rgb(154, 205, 50);
+    color:rgb(50, 50, 50);
+    border-radius: 25px;
+    border: none;
+    transition: all 0.8s ease;
+    cursor: pointer;
 }
 
-.description p {
-    margin: 0;
-    margin-top: 10px;
+#buttonTop:hover {
+    background-color: rgb(220, 255, 149);
+    transform: scale(1.2);
+    transition: all 0.8s ease;
 }
-
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
+/* ----------------------------------------------- */
+/* Styleanpassung für Bildschirme die nicht breiter als 600px sind. Zum testen im Browser */
 @media screen and (max-width: 600px){
     #burger-menu {
         display: block;
@@ -343,6 +451,7 @@ img {
     }
 }
 
+/* Style anpassen an iPhone 12 / 12 Pro Display Größe */
 @media only screen and (device-width: 390px){
     #burger-menu {
         display: block;
@@ -480,130 +589,5 @@ img {
     textarea::-webkit-scrollbar-thumb {
         background-color: rgb(220, 255, 149);
         border-radius: 0px 30px 30px 0px;
-    }
-}
-
-@media only screen and (device-width: 428px){
-    #burger-menu {
-        display: block;
-        font-size: 100px;
-    }
-
-    #desktop-menu {
-        display: none;
-    }
-
-    #close {
-        height: 120px;
-        width: 120px;
-        position: fixed;
-        bottom: 60px;
-        left: 45%;
-    }
-    
-    #close button {
-        border-radius: 60px;
-        font-size: 80px;
-        height: inherit;
-        width: inherit;
-    }
-
-    #mobile-menu {
-        margin-top: 400px;
-    }
-
-    #mobile-menu ul li {
-        padding: 50px 0;
-    }
-
-    #mobile-menu ul li a {
-        font-size: 70px;
-    }
-
-    #main-heading {
-        letter-spacing: 20px;
-        line-height: 100px;
-        font-size: 100px;
-    }
-
-    #rezept-name {
-        font-size: 50px;
-    }
-
-    .image {
-        max-width: 740px;
-        height: 740px;
-        margin: 0 auto;
-    }
-    
-    #rezept-bild {
-        height: inherit;
-        max-width: inherit;
-        border-radius: 30px;
-    }
-
-    .content {
-        max-width: 800px;
-    }
-
-    .content p {
-        font-size: 40px;
-        margin: 20px 0;
-    }
-
-    #kontakt {
-        margin-bottom: 100px;
-        font-size: 60px;
-    }
-
-    input {
-        height: 80px;
-        border-radius: 40px;
-        font-size: 40px;
-        padding-left: 30px;
-    }
-
-    textarea {
-        height: 500px;
-        border-radius: 40px;
-        font-size: 40px;
-    }
-
-    .card {
-        min-width: 800px;
-        max-width: 800px;
-        height: 800px;
-        margin: 30px auto;
-    }
-
-    .thumbnail {
-        height: 630px;
-    }
-    
-    .description {
-        padding: 5px 0px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 70px;
-    }
-    
-    .description p {
-        margin: 0;
-        margin-top: 20px;
-    }
-
-    .button {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #contact-btn {
-        width: 400px;
-        height: 100px;
-        padding: 12px;
-        border-radius: 50px;
-        font-size: 50px;
-        margin-top: 50px;
     }
 }
